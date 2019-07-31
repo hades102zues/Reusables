@@ -1,26 +1,46 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.css';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import SideDrawer from './SideDrawer/SideDrawer';
+
+
+
+
+interface State {
+  displayBool : boolean
+}
+class App extends React.Component<{}, State> {
+
+    constructor (props:{}) {
+      super(props);
+      this.state = {
+        displayBool:false
+      };
+    }
+
+    //changes the boolean that controls the open state of the sidedrawer
+    clickHandler = () =>{
+      
+      this.setState( {displayBool : !this.state.displayBool} );
+    }
+
+    render () {
+      return (
+        <React.Fragment>
+            
+              <SideDrawer 
+              display={this.state.displayBool} 
+              stateHandler = {this.clickHandler}
+              
+              />
+              <button onClick={this.clickHandler}>click me</button>
+             
+        </React.Fragment>
+
+      );
+    }
+ 
 }
 
 export default App;
