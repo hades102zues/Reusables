@@ -35,12 +35,16 @@
 }
 
 .sideNav__link{
-background:#ccc;
+
 cursor: pointer;
 
 
 padding: 1rem 1.5rem;
 font-size:1.6rem;
+}
+
+.sideNav__link:hover{
+    background:#ccc;
 }
 
 .sideNav__link_right{
