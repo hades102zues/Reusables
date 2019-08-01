@@ -4,6 +4,7 @@ import styles from './App.module.css';
 
 import SideDrawer from './SideDrawer/SideDrawer';
 import Header from './Header/Header';
+import BasicForm from './BasicForm/BasicForm';
 
 
 interface State {
@@ -28,11 +29,13 @@ class App extends React.Component<{}, State> {
       return (
         <React.Fragment>
 
-            <Header drawerHandler={this.clickHandler} />
+         <BasicForm />
+
+            {/* {<Header drawerHandler={this.clickHandler} />
            <SideDrawer 
               display={this.state.displayBool} 
               stateHandler = {this.clickHandler}
-            />
+            />} */}
 
              
              
