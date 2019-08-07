@@ -1,0 +1,47 @@
+.dropDownSpace {
+    background-color:brown; /*should be same as header*/
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+
+    /*liable to change*/
+    width:100%;
+    position:fixed;
+    z-index:5;
+}
+
+.dropDownSpace_reveal {
+max-height: 1000px;
+}
+
+.dropDownSpace__wrapper {
+    width: 95%;
+
+    max-width: 140rem;
+    margin: 0 auto;
+   
+   
+}
+
+.dropDown__list{
+ list-style: none;
+ display: flex;
+ padding: 1rem 0;
+ flex-direction: column;
+ align-items: center;
+ 
+}
+
+.dropDown__link {
+ 
+        color: white;
+        padding: 0.5rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+}
+
+@media screen and (min-width: 1024px){
+    .dropDownSpace {
+        display:none;
+    }
+}
