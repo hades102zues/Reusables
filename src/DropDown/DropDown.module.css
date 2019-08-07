@@ -38,6 +38,9 @@ max-height: 1000px;
         padding: 0.5rem;
         font-size: 1.6rem;
         cursor: pointer;
+        width:150px;
+        background:green;
+        text-align:center;
 }
 
 @media screen and (min-width: 1024px){
