@@ -1,0 +1,102 @@
+.header{
+
+    padding:1rem 0;
+}
+
+.header__wrapper{
+    width: 85%;
+    max-width: 140rem;
+    margin: 0 auto;
+    border:1px solid red;
+    display: flex;
+    height:4rem;
+
+}
+.header_fade{
+    background:transparent;
+}
+.header_stick{
+    background-color:brown;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 3;
+}
+
+.logoSpace{
+    width:40%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.logo__image{
+     /*width will need to match the height of the header__wrapper*/
+    width: 4rem;
+    height:4rem;
+    background-color:blue;
+    cursor: pointer;
+}
+
+.logo__company{
+margin-left:1.2rem;
+font-size: 1.6rem;
+cursor: pointer;
+}
+
+.navSpace{
+    width:60%;
+    height:100%;
+    border: 1px solid orange;
+  
+}
+
+.nav{
+    height:100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.nav__list{
+    height:100%;
+    list-style: none;
+    display: flex;
+   border:1px solid purple;
+}
+
+.nav__link{
+    height:100%;
+    margin-left:1.5rem;
+    background:green;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .header__wrapper{
+        width:95%;
+    }
+
+    .logoSpace{
+        width:75%;
+    }
+    .navSpace{
+        width:25%;
+    }
+    .nav__list{
+        display:none;
+    }
+}
+
+

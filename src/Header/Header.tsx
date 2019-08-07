@@ -3,7 +3,7 @@ import styles from './Header.module.css';
 import Hamburger from './Hamburger/Hamburger';
 
 interface Props {
-    drawerHandler: ()=> any
+    drawerHandler: ()=> any /*the handler that sets the flag that triggers any of the drawer components */
 }
 
 const header:React.FC<Props> = (props) => (

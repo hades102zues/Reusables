@@ -3,8 +3,8 @@ import styles from './DropDown.module.css';
 
 
 interface Props {
-    display : boolean,
-    stateHandler() : any,
+    display : boolean, /*flag that triggers opening of dropdown */
+    stateHandler() : any,  /*the handler that sets the flag which displays the drop down*/
 }
 
 const dropDown:React.FC<Props> = ( props ) => {

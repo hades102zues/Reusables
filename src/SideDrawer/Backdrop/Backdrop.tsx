@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './Backdrop.module.css'
 
 interface Props {
-    display : boolean,
-    onClick() :any
+    display : boolean, /*flag for when to launch  backdrop */
+    onClick() :any /* the handler that sets the flag that triggers the backdrop */
 }
 const backdrop:React.FC<Props> = (props) => {
 

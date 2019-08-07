@@ -3,7 +3,7 @@ import "./Hamburger.css";
 
 
 interface IProps {
-   click: ()=>any /*the handler that sets the flag that triggers any of the drawer components */
+   click: ()=>any
 }
 
 const hamburger: React.FC<IProps> = (props) => {

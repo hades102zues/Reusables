@@ -3,9 +3,9 @@ import styles from './SideNav.module.css';
 
 interface Props {
 
-    display:boolean,
-    linkClick() : any
-    right? : boolean
+    display:boolean,  /*flag for when to launch sidedrawer */
+    linkClick() : any  /* the handler that sets the flag that triggers the sidedrawer */
+    right? : boolean  /*used to affix the side drawer to the right of the screen */
 
 }
 
